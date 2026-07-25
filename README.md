@@ -192,6 +192,7 @@ python -m unittest discover tests
 # Live Demo
 
 Live URL:
+https://example.com/
 
 ```
 https://page-pulse-30dg.onrender.com
@@ -200,7 +201,7 @@ https://page-pulse-30dg.onrender.com
 Loom Walkthrough:
 
 ```
-(Add your Loom video link here)
+https://drive.google.com/drive/my-drive
 ```
 
 ---
