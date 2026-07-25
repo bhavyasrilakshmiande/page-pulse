@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Pulse</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Page Pulse</h1>
+      <input type="text" id="urlInput" placeholder="Enter URL to audit" />
+      <button id="auditButton">Audit</button>
+      <div id="loading" class="hidden">Loading...</div>
+      <div id="result" class="result-card hidden">
+        <h2>Audit Results</h2>
+        <p><strong>HTTP Status:</strong> <span id="httpStatus"></span></p>
+        <p>
+          <strong>Response Time:</strong> <span id="responseTime"></span> ms
+        </p>
+        <p><strong>Page Title:</strong> <span id="pageTitle"></span></p>
+        <p>
+          <strong>Meta Description:</strong> <span id="metaDescription"></span>
+        </p>
+        <p><strong>H1 Count:</strong> <span id="h1Count"></span></p>
+        <p>
+          <strong>Images Missing Alt:</strong>
+          <span id="imagesMissingAlt"></span>
+        </p>
+        <p><strong>Word Count:</strong> <span id="wordCount"></span></p>
+        <button id="copyJsonButton">Copy JSON Response</button>
+        <button id="clearResultsButton">Clear Results</button>
+      </div>
+      <div id="error" class="error-card hidden">
+        <p>Error: <span id="errorMessage"></span></p>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Built for
+        <a href="https://digitalheroesco.com">Digital Heroes Training Task</a>
+      </p>
+    </footer>
+    <script src="../static/script.js"></script>
+  </body>
+</html>
