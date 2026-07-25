@@ -192,10 +192,9 @@ python -m unittest discover tests
 # Live Demo
 
 Live URL:
-https://page-pulse-30dg.onrender.com
 
 ```
-(Add your Render deployment link here)
+https://page-pulse-30dg.onrender.com
 ```
 
 Loom Walkthrough:
